@@ -46,3 +46,4 @@ gem 'pry-rails', group: [:development, :test]
 
 # Add bootstrap for styling
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'font-awesome-sass'

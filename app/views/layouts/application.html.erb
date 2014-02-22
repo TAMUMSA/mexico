@@ -1,14 +1,172 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mexico</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>TAMU Mexico Study Abroad</title>
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= yield %>
 
-<%= yield %>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-suitcase"></i></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#resources">Resources</a></li>
+            <li class="active"><a href="#calendar">Calendar</a></li>
+            <li class="active"><a href="#forum">Forum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-</body>
+    <div id="hello">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 centered">
+            <h1>San Miguel de Allende, Mexico</h1>
+            <h2>Study Abroad, Summer 2014</h2>
+            <h3>Texas A&M</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="goals">
+      <div class="container goals">
+        <div class="row">
+          <div class="col-lg-12 centered">
+            <h3>Our goal:</h3>
+            <p>To have the students speak in English using basic, simple phrases and commands with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container objectives">
+      <h2>Teaching Objectives</h2>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Grades 1-2
+              </a>
+              <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <i class="fa fa-plus-square-o"></i>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Students should be able to:
+              <ul>
+                <li>
+                  identify the seasons and climate using simple sentences.
+                </li>
+
+                <li>
+                  identify body parts.
+                </li>
+
+                <li>
+                  identify articles of clothing.
+                </li>
+
+                <li>
+                  express their feelings in simple sentences.
+                </li>
+
+                <li>
+                  ask and answer questions regarding identification of objects.
+                </li>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Grades 3-4
+              </a>
+              <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <i class="fa fa-plus-square-o"></i>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                Grades 5-6
+              </a>
+              <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <i class="fa fa-plus-square-o"></i>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills">
+      <div class="container">
+        <div class="row centered">
+          <h3>OUR SKILLS</h3>
+        </div>
+      </div>
+    </div>
+    
+    <section id="contact"></section>
+
+    <div id="social">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-md-3">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="f">
+      <div class="container">
+        <div class="row">
+          <p>Crafted with <i class="fa fa-heart"></i> at Rails Girls Houston</p>
+        </div>
+      </div>
+    </div>
+
+    <%= javascript_include_tag "application" %>
+  </body>
 </html>
